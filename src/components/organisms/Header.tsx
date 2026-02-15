@@ -3,39 +3,40 @@ import { ArrowRightIcon, CommandLineIcon } from "@heroicons/react/24/outline";
 
 export default function Header() {
   return (
-    <div className="">
+    <header className="sticky top-0 z-50 bg-opacity-50 backdrop-blur-sm border-b border-b-2 h-16">
       <div>
-        <CommandLineIcon className="w-5 h-5" />
-        <h1>~$ ./Portfolio</h1>
+        <h1>{">"}_ ~/Portfolio</h1>
       </div>
-      <HeaderButton
-        children={
-          <>
-            <h1>~$ cd home</h1>
-          </>
-        }
-      />
-      <HeaderButton
-        children={
-          <>
-            <h1>~$ cd about</h1>
-          </>
-        }
-      />
-      <HeaderButton
-        children={
-          <>
-            <h1>~$ cd projects</h1>
-          </>
-        }
-      />
-      <HeaderButton
-        children={
-          <>
-            <h1>~$ cd contact</h1>
-          </>
-        }
-      />
-    </div>
+      <div className="flex items-center space-x-1">
+        <HeaderButton
+          children={
+            <>
+              <h1>~$ home</h1>
+            </>
+          }
+        />
+        <HeaderButton
+          children={
+            <>
+              <h1>~$ about</h1>
+            </>
+          }
+        />
+        <HeaderButton
+          children={
+            <>
+              <h1>~$ projects</h1>
+            </>
+          }
+        />
+        <HeaderButton
+          children={
+            <>
+              <h1>~$ contact</h1>
+            </>
+          }
+        />
+      </div>
+    </header>
   );
 }

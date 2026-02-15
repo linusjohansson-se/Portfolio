@@ -4,7 +4,7 @@ import MainLayout from "./components/templates/MainLayout";
 function App() {
   return (
     <MainLayout>
-      <Button children={<h1>Under construction</h1>} />
+      //<Button children={<h1>Under construction</h1>} />
     </MainLayout>
   )
 }
