@@ -27,6 +27,13 @@ export default function Navbar() {
       <HeaderButton
         children={
           <>
+            <h1>~$ cv</h1>
+          </>
+        }
+      />
+      <HeaderButton
+        children={
+          <>
             <h1>~$ contact</h1>
           </>
         }
