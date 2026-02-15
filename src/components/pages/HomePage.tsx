@@ -6,20 +6,22 @@ import ProfileCard from "../organisms/ProfileCard";
 export default function HomePage() {
   return (
     <>
-      <div>
+      <div className="flex flex-col flex-1 items-center justify-center min-h-screen">
         <ProfileCard />
-        <Button>
-          <FaGithub className="w-5 h-5 shrink-0" />
-          <h1>Github</h1>
-        </Button>
-        <Button>
-          <FaLinkedin className="w-5 h-5 shrink-0" />
-          <h1>LinkedIn</h1>
-        </Button>
-        <Button>
-          <HiOutlineEnvelope className="w-5 h-5 shrink-0" />
-          <h1>Email</h1>
-        </Button>
+        <div className="flex flex-row">
+          <Button>
+            <FaGithub className="w-5 h-5 shrink-0" />
+            <h1>Github</h1>
+          </Button>
+          <Button>
+            <FaLinkedin className="w-5 h-5 shrink-0" />
+            <h1>LinkedIn</h1>
+          </Button>
+          <Button>
+            <HiOutlineEnvelope className="w-5 h-5 shrink-0" />
+            <h1>Email</h1>
+          </Button>
+        </div>
       </div>
     </>
   );

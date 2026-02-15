@@ -3,8 +3,11 @@ import MainLayout from "./components/templates/MainLayout";
 
 function App() {
   return (
-    <MainLayout children={HomePage()} />
-  )
+    <MainLayout>
+      <HomePage />
+      <HomePage />
+    </MainLayout>
+  );
 }
 
 export default App;
