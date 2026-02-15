@@ -13,3 +13,12 @@
 body {
   @apply bg-bg text-text;
 }
+
+@keyframes floatSlow {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(40px, -60px);
+  }
+}
