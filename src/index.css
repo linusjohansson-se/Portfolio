@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #000000;
+  --color-text: #00ff41;
+  --color-border: #00ff41;
+  --color-text-second: #c9d1d9;
+  --color-bg-second: #161b22;
+}
+
+body {
+  @apply bg-bg text-text;
+}
