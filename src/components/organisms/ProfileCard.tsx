@@ -8,7 +8,7 @@ export default function ProfileCard() {
         <Card
           children={
             <>
-              <CodeText text="Welcome to my portfolio_"/>
+              <CodeText text="Welcome to my portfolio"/>
               <div className="flex flex-col ">
                 <span>{"var person = new Person {"}</span>
                 <span>Name: "Linus Johansson"</span>
