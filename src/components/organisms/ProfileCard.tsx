@@ -4,12 +4,12 @@ import Card from "../molecules/Card";
 export default function ProfileCard() {
   return (
     <>
-      <div className="flex">
+      <div className="flex w-fit">
         <Card
           children={
             <>
-              <CodeText text="Welcome to my portfolio"/>
-              <div className="flex flex-col ">
+              <CodeText text="Welcome to my portfolio" />
+              <div className="flex flex-col">
                 <span>{"var person = new Person {"}</span>
                 <span>Name: "Linus Johansson"</span>
                 <span>Speciality: "Tech"</span>
