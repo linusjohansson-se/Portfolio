@@ -12,8 +12,10 @@ export default function MainLayout({ children }: Props) {
     <>
       <FloatingNumbers />
       <div className="relative z-10 w-full min-h-screen flex flex-col border-border border-4 max-w-full">
-        <Header />
-        {children}
+        {<Header />}
+        <div className="flex flex-col w-300 max-w-full flex-1 self-center px-4 py-8">
+          {children}
+        </div>
         <Footer />
       </div>
     </>

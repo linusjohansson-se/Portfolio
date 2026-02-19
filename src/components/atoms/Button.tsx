@@ -9,7 +9,7 @@ function Button({ children, onClick }: Props) {
   return (
     <button
       onClick={onClick}
-      className="w-fit flex items-center justify-center space-x-2 px-6 py-3 border-2 border-border text-text hover:bg-text hover:text-bg transition-colors rounded font-mono font-bold"
+      className="w-fit flex items-center justify-center space-x-2 px-6 py-3 border-2 border-border text-text hover:bg-text hover:text-bg transition-colors rounded font-mono font-bold hover:cursor-pointer"
     >
       {children}
     </button>

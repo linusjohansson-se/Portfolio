@@ -4,7 +4,7 @@ import Card from "../molecules/Card";
 export default function ProfileCard() {
   return (
     <>
-      <div className="w-full max-w-[1100px] mx-auto mt-10">
+      <div className="w-full mx-auto mt-10">
         <Card
           children={
             <>
