@@ -11,7 +11,7 @@ export default function MainLayout({ children }: Props) {
   return (
     <>
       <FloatingNumbers />
-      <div className="min-w-screen min-h-screen flex flex-col bg-bg border-border border-4">
+      <div className="relative z-10 w-full min-h-screen flex flex-col border-border border-4 max-w-full">
         <Header />
         {children}
         <Footer />

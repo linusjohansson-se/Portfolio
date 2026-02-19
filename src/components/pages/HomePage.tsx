@@ -6,7 +6,7 @@ import ProfileCard from "../organisms/ProfileCard";
 export default function HomePage() {
   return (
     <>
-      <div className="flex flex-col flex-1 items-center justify-center min-h-screen">
+      <div className="flex flex-col flex-1 items-center justify-center min-h-screen max-w-full">
         <div>
           <ProfileCard />
           <div className="flex flex-row self-start pt-3 gap-3">

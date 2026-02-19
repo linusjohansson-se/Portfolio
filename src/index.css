@@ -8,6 +8,10 @@
   --color-bg-second: #161b22;
   --color-card-border: #30363d;
   --color-card-bg: #161b22;
+  --color-syntax-keyword: #bcbec4;
+  --color-syntax-type: #c77dbb;
+  --color-syntax-string: #ffc66d;
+  --color-syntax-prop: #56a8f5;
 }
 
 body {

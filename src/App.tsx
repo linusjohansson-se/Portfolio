@@ -5,7 +5,6 @@ function App() {
   return (
     <MainLayout>
       <HomePage />
-      <HomePage />
     </MainLayout>
   );
 }

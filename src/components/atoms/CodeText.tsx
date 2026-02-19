@@ -40,7 +40,7 @@ export default function CodeText({ text }: Props) {
   }, [printing]);
 
   return (
-    <h1 className="font-mono text-4xl sm:text-6xl font-bold text-[#00ff41] mb-4 whitespace-nowrap">
+    <h1 className="font-mono text-4xl sm:text-6xl font-bold text-[#00ff41] mb-4">
       {textToPrint}<span className="inline-block w-[1ch]">{cursor}</span>
     </h1>
   );
