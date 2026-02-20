@@ -1,5 +1,3 @@
-import HeaderButton from "../atoms/HeaderButton";
-import { VscTerminal } from "react-icons/vsc";
 import Navbar from "../molecules/Navbar";
 import { FaTerminal } from "react-icons/fa";
 
@@ -9,7 +7,7 @@ export default function Header() {
       <div className="flex flex-row w-300 items-center justify-between max-w-full mx-auto">
         <div className="flex items-center space-x-2">
           <FaTerminal className="w-6 h-6" />
-          <h1 className="font-mono font-bold text-lg">~/Portfolio</h1>
+          <h1 className="font-mono font-bold text-lg">ontheline.se</h1>
         </div>
         <Navbar />
       </div>
