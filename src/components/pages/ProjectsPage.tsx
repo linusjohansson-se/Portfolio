@@ -18,7 +18,7 @@ export default function ProjectsPage() {
             <Project
               headline={"SecretsZen"}
               description={
-                "A password messaging system built to allow users to securely share sensitive information. It uses end-to-end encryption to ensure that only the intended recipient can access the shared secrets. The system is designed with a focus on user privacy and security, making it an ideal solution for sharing confidential information."
+                "Inspired by pwpush.com. Shareable links for sensitive information that self-destruct after a set number of views or time period. Built with Clean Architecture, C#/.NET, Entity Framework, and Dapper."
               }
               status={<Status status={ProjectStatus.UnderConstruction} />}
               tags={
