@@ -6,7 +6,7 @@ interface Props {
 
 export default function Card({ children }: Props) {
   return (
-    <div className="p-6 rounded-lg border-1 hover:border-border border-card-border bg-card-bg shadow-md shadow-card-border">
+    <div className="w-full p-6 rounded-lg border-1 hover:border-border border-card-border bg-card-bg shadow-md shadow-card-border">
       {children}
     </div>
   );
