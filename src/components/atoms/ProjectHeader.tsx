@@ -6,7 +6,7 @@ interface Props {
 
 export default function ProjectHeader({ Headline }: Props) {
   return (
-    <div className="flex flex-row justify-center mb-8 pl-4 font-mono">
+    <div className="flex flex-row justify-center mb-3 font-mono">
       <div className="bg-green-accent rounded-xl">
         <FaTerminal className="p-3 w-10 h-10" />
       </div>
