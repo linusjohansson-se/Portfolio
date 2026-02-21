@@ -2,36 +2,44 @@ import CardHeader from "../atoms/CardHeader";
 import SectionHeader from "../atoms/SectionHeader";
 import Card from "../molecules/Card";
 import Experience from "../molecules/Experience";
+import profileImg from "../../assets/profile.png";
 
 export default function AboutPage() {
   return (
     <>
-      <div className="flex flex-col flex-1 items-center justify-center min-h-screen max-w-full">
+      <div className="flex flex-col flex-1  justify-center min-h-screen max-w-full">
         <SectionHeader
-          headline="About Me"
+          headline="cat aboutme.md"
           subheadline="Loading information about me..."
         />
-        <div className="w-full mx-auto mt-10">
+        <div className="w-full mx-auto mt-10 py-4 space-y-10">
+          <div className="flex flex-row w-full justify-center space-x-10">
+            <div className="w-full">
+              <Card
+                children={
+                  <>
+                    <CardHeader Header={"About Me"} />
+                    <p className="font-mono text-text-second">
+                      
+                    </p>
+                  </>
+                }
+              />
+            </div>
+            <img
+              src={profileImg}
+              alt="Profile Picture"
+              className="h-100"
+              style={{
+                filter: "drop-shadow(0 0 8px #00ff41)",
+                maskImage: "radial-gradient(ellipse at center, black 40%, transparent 80%)",
+              }}
+            />
+          </div>
           <Card
             children={
               <>
-              <CardHeader Icon = {<div className="w-6 h-6 mr-2 text-text-second">Icon</div>} Header={"About Me"} />
-                
-              </>
-            }
-          />
-          <Card
-            children={
-              <>
-              <CardHeader Icon = {<div className="w-6 h-6 mr-2 text-text-second">Icon</div>} Header={"Skills"} />
-                
-              </>
-            }
-          />
-          <Card
-            children={
-              <>
-              <CardHeader Icon = {<div className="w-6 h-6 mr-2 text-text-second">Icon</div>} Header={"Experience"} />
+                <CardHeader Header={"Experience"} />
                 <Experience
                   Role={"DEVELOPER & TEAM LEAD"}
                   Company={"evolvit Solutions AB"}
