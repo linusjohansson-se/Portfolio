@@ -13,14 +13,14 @@ export default function Navbar() {
       <HeaderButton
         children={
           <>
-            <h1>~$ about</h1>
+            <h1>~$ projects</h1>
           </>
         }
       />
       <HeaderButton
         children={
           <>
-            <h1>~$ projects</h1>
+            <h1>~$ about</h1>
           </>
         }
       />
