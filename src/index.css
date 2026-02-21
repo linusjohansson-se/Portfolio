@@ -15,6 +15,14 @@
   --color-text-defused: #8b949e;
   --color-green-accent: #123024;
   --color-dark-green-accent: #10221E;
+  --color-dark-yellow-accent: #2a2006;
+  --color-dark-gray-accent: #1c1f24;
+  --color-text-green-accent: #3fb950;
+  --color-text-yellow-accent: #d29922;
+  --color-text-gray-accent: #8b949e;
+  --color-border-green-accent: #238636;
+  --color-border-yellow-accent: #9e6a03;
+  --color-border-gray-accent: #30363d;
 }
 
 body {

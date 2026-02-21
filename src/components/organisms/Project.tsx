@@ -20,7 +20,7 @@ export default function Project(props: Props) {
         children={
           <>
             <div className="flex flex-col h-full">
-              <div className="flex flex-row w-full">
+              <div className="flex flex-row w-full items-center justify-between">
                 <ProjectHeader Headline={props.headline} />
                 {props.status}
               </div>
