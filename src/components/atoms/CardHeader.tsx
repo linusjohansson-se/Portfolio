@@ -9,7 +9,10 @@ export default function CardHeader({ Header }: Props) {
     <>
       <div className="flex flex-row">
         <h1 className="font-mono text-lg font-bold text-text">
-          {"# " + Header}
+          {"#"}
+        </h1>
+        <h1 className="font-mono text-lg font-bold text-text-second pl-2">
+          {Header}
         </h1>
       </div>
     </>

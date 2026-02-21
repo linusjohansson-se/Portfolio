@@ -2,7 +2,6 @@ import CardHeader from "../atoms/CardHeader";
 import SectionHeader from "../atoms/SectionHeader";
 import Card from "../molecules/Card";
 import Experience from "../molecules/Experience";
-import profileImg from "../../assets/profile.png";
 
 export default function AboutPage() {
   return (
@@ -12,30 +11,15 @@ export default function AboutPage() {
           headline="cat aboutme.md"
           subheadline="Loading information about me..."
         />
-        <div className="w-full mx-auto mt-10 py-4 space-y-10">
-          <div className="flex flex-row w-full justify-center space-x-10">
-            <div className="w-full">
-              <Card
-                children={
-                  <>
-                    <CardHeader Header={"About Me"} />
-                    <p className="font-mono text-text-second">
-                      
-                    </p>
-                  </>
-                }
-              />
-            </div>
-            <img
-              src={profileImg}
-              alt="Profile Picture"
-              className="h-100"
-              style={{
-                filter: "drop-shadow(0 0 8px #00ff41)",
-                maskImage: "radial-gradient(ellipse at center, black 40%, transparent 80%)",
-              }}
-            />
-          </div>
+        <div className="w-full mx-auto mt-10 space-y-10">
+          <Card
+            children={
+              <>
+                <CardHeader Header={"About Me"} />
+                <p className="font-mono text-text-second"></p>
+              </>
+            }
+          />
           <Card
             children={
               <>

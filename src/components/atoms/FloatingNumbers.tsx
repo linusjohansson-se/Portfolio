@@ -1,39 +1,38 @@
 import { useMemo } from "react";
 
-const NUM_COUNT = 30;
-
-function generateNumbers() {
-  return Array.from({ length: NUM_COUNT }, () => ({
-    left: Math.random() * 100,
-    top: Math.random() * 100,
-    fontSize: 12 + Math.random() * 16,
-    duration: 20 + Math.random() * 20,
-    direction: Math.random() > 0.5 ? "alternate" : "alternate-reverse" as const,
-    value: Math.random() > 0.5 ? "0" : "1",
-  }));
-}
-
-export default function FloatingNumbers() {
-  const numbers = useMemo(generateNumbers, []);
+const FloatingBinary = () => {
+  const particles = useMemo(() => {
+    return Array.from({ length: 30 }, (_, i) => ({
+      id: i,
+      char: Math.random() > 0.5 ? "1" : "0",
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      fontSize: `${12 + Math.random() * 16}px`,
+      duration: `${20 + Math.random() * 20}s`,
+      delay: `${-Math.random() * 20}s`,
+      opacity: 0.04 + Math.random() * 0.06,
+    }));
+  }, []);
 
   return (
     <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
-      {numbers.map((n, i) => (
+      {particles.map((p) => (
         <span
-          key={i}
-          className="absolute text-white/10 font-mono"
+          key={p.id}
+          className="absolute font-mono text-primary"
           style={{
-            left: `${n.left}%`,
-            top: `${n.top}%`,
-            fontSize: `${n.fontSize}px`,
-            textShadow: "0px 0px 31px #00ff41",
-            animation: `floatSlow ${n.duration}s linear infinite`,
-            animationDirection: n.direction,
+            left: p.left,
+            top: p.top,
+            fontSize: p.fontSize,
+            opacity: p.opacity,
+            animation: `float-slow ${p.duration} ease-in-out ${p.delay} infinite`,
           }}
         >
-          {n.value}
+          {p.char}
         </span>
       ))}
     </div>
   );
-}
+};
+
+export default FloatingBinary;
