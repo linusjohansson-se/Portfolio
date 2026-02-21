@@ -16,7 +16,8 @@ export default function AboutPage() {
             children={
               <>
                 <CardHeader Header={"About Me"} />
-                <p className="font-mono text-text-second"></p>
+                <p className="font-mono text-text-second">I'm a developer based in Sweden with a background that spans IT infrastructure, networking, and software development. I started out as an IT technician working across all domains, from basic support to complex deliveries, before moving into infrastructure and hosting where I managed VMware environments, network upgrades, and data center redundancy. That hands-on foundation gave me a deep appreciation for how systems actually work under the hood.</p>
+                <p className="font-mono text-text-second mt-4">Today I work as a developer and team lead, building backend services, APIs, and automated workflows. I care about clean, maintainable architecture and most of my projects lean on Clean Architecture and CQRS patterns. Outside of work I tinker with side projects, have an interest in security, and spend time on cars and gaming.</p>
               </>
             }
           />
