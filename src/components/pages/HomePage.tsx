@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <>
       <div className="flex flex-col flex-1 items-center justify-center min-h-screen max-w-full">
-        <div>
+        <div className="flex flex-col w-full">
           <ProfileCard />
           <div className="flex flex-row self-start pt-8 gap-3">
             <Button onClick={() => window.open("https://www.github.com/linusjohansson-se/", "_blank")}>
