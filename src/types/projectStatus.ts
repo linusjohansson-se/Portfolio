@@ -1,5 +1,5 @@
 export const ProjectStatus = {
-  UnderConstruction: "Under construction",
+  InProgess: "In-progress",
   Live: "Live",
   Scraped: "Scraped",
 } as const;

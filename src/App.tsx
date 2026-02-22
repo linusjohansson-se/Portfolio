@@ -7,8 +7,8 @@ function App() {
   return (
     <MainLayout>
       <div id="home" className="scroll-mt-24"><HomePage /></div>
-      <div id="projects" className="scroll-mt-24"><ProjectsPage /></div>
-      <div id="about" className="scroll-mt-24"><AboutPage /></div>
+      <div id="projects" className="scroll-mt-24 sm:scroll-mt-34"><ProjectsPage /></div>
+      <div id="about" className="scroll-mt-24 sm:scroll-mt-0"><AboutPage /></div>
     </MainLayout>
   );
 }

@@ -9,7 +9,7 @@ export default function HomePage() {
       <div className="flex flex-col flex-1 items-center justify-center min-h-screen max-w-full">
         <div className="flex flex-col w-full">
           <ProfileCard />
-          <div className="flex flex-row flex-wrap self-start pt-8 gap-3">
+          <div className="flex flex-row flex-wrap self-start pt-4 sm:pt-8 gap-3">
             <Button onClick={() => window.open("https://www.github.com/linusjohansson-se/", "_blank")}>
               <FaGithub className="w-5 h-5 shrink-0" />
               <h1>Github</h1>

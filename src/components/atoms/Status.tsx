@@ -20,7 +20,7 @@ export default function Status({ status }: Props) {
       text = "text-text-gray-accent";
       border = "border-border-gray-accent";
       break;
-    case ProjectStatus.UnderConstruction:
+    case ProjectStatus.InProgess:
       bg = "bg-dark-yellow-accent";
       text = "text-text-yellow-accent";
       border = "border-border-yellow-accent";
@@ -32,7 +32,7 @@ export default function Status({ status }: Props) {
   }
 
   return (
-    <div className={`${bg} ${border} border px-3 py-1 rounded`}>
+    <div className={`${bg} ${border} border px-3 py-1 rounded text-nowrap justify-center items-center`}>
       <h1 className={`font-mono text-sm ${text}`}>{status}</h1>
     </div>
   );

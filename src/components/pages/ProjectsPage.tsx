@@ -20,7 +20,7 @@ export default function ProjectsPage() {
               description={
                 "Inspired by pwpush.com. Shareable links for sensitive information that self-destruct after a set number of views or time period. Built with Clean Architecture, C#/.NET, Entity Framework, and Dapper."
               }
-              status={<Status status={ProjectStatus.UnderConstruction} />}
+              status={<Status status={ProjectStatus.InProgess} />}
               tags={
                 <TagsSection
                   tags={
@@ -43,7 +43,7 @@ export default function ProjectsPage() {
               description={
                 "A work order management system built with Clean Architecture and a hand-rolled CQRS implementation. The standout feature is its adaptive database design, where users can define custom fields that are dynamically added as real columns via ALTER TABLE, giving teams full flexibility while preserving query performance."
               }
-              status={<Status status={ProjectStatus.UnderConstruction} />}
+              status={<Status status={ProjectStatus.InProgess} />}
               tags={
                 <TagsSection
                   tags={
@@ -66,7 +66,7 @@ export default function ProjectsPage() {
               description={
                 "A fun project where I built a REST API for tracking competitive game results and Elo ratings. Records match results, automatically recalculates ratings using the standard Elo formula, and exposes a clean HTTP API for client consumption."
               }
-              status={<Status status={ProjectStatus.UnderConstruction} />}
+              status={<Status status={ProjectStatus.InProgess} />}
               tags={
                 <TagsSection
                   tags={
