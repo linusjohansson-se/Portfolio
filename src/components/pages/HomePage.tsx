@@ -2,6 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineEnvelope } from "react-icons/hi2";
 import Button from "../atoms/Button";
 import ProfileCard from "../organisms/ProfileCard";
+import EmailOnClick from "../atoms/EmailOnClick";
 export default function HomePage() {
   return (
     <>
@@ -17,7 +18,7 @@ export default function HomePage() {
               <FaLinkedin className="w-5 h-5 shrink-0" />
               <h1>LinkedIn</h1>
             </Button>
-            <Button>
+            <Button onClick={() => EmailOnClick()}>
               <HiOutlineEnvelope className="w-5 h-5 shrink-0" />
               <h1>Email</h1>
             </Button>
