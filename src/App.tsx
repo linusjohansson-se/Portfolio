@@ -6,9 +6,9 @@ import MainLayout from "./components/templates/MainLayout";
 function App() {
   return (
     <MainLayout>
-      <HomePage />
-      <ProjectsPage />
-      <AboutPage />
+      <div id="home"><HomePage /></div>
+      <div id="projects"><ProjectsPage /></div>
+      <div id="about"><AboutPage /></div>
     </MainLayout>
   );
 }
