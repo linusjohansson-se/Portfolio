@@ -10,7 +10,7 @@ export default function ProjectHeader({ Headline }: Props) {
       <div className="bg-green-accent rounded-xl">
         <FaTerminal className="p-3 w-10 h-10" />
       </div>
-      <h1 className="pl-3 text-3xl font-bold text-text-second">{Headline}</h1>
+      <h1 className="pl-3 text-xl sm:text-3xl font-bold text-text-second">{Headline}</h1>
     </div>
   );
 }

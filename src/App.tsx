@@ -6,9 +6,9 @@ import MainLayout from "./components/templates/MainLayout";
 function App() {
   return (
     <MainLayout>
-      <div id="home"><HomePage /></div>
-      <div id="projects"><ProjectsPage /></div>
-      <div id="about"><AboutPage /></div>
+      <div id="home" className="scroll-mt-24"><HomePage /></div>
+      <div id="projects" className="scroll-mt-24"><ProjectsPage /></div>
+      <div id="about" className="scroll-mt-24"><AboutPage /></div>
     </MainLayout>
   );
 }

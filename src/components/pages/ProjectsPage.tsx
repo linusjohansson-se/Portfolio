@@ -8,13 +8,13 @@ import { ProjectStatus } from "../../types/projectStatus";
 export default function ProjectsPage() {
   return (
     <>
-      <div className="flex flex-col flex-1  justify-center min-h-screen max-w-full">
+      <div className="flex flex-col flex-1 min-h-screen max-w-full space-y-1">
         <SectionHeader
           headline="cat projects.md"
           subheadline="// TODO: finish all of these"
         />
         <div className="flex flex-col">
-          <div className="flex flex-row w-full mx-auto mt-10 space-x-10">
+          <div className="flex flex-col sm:flex-row w-full mx-auto mt-6 sm:mt-10 gap-6 sm:gap-0 sm:space-x-10">
             <Project
               headline={"SecretsZen"}
               description={
@@ -60,7 +60,7 @@ export default function ProjectsPage() {
               repositoryLink={"https://github.com/linusjohansson-se/Nileto"}
             />
           </div>
-          <div className="flex flex-row w-full mx-auto mt-10 space-x-10">
+          <div className="flex flex-col sm:flex-row w-full mx-auto mt-6 sm:mt-10 gap-6 sm:gap-0 sm:space-x-10">
             <Project
               headline={"GameElo"}
               description={

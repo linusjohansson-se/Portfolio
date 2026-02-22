@@ -11,7 +11,7 @@ export default function AboutPage() {
           headline="cat aboutme.md"
           subheadline="Loading information about me..."
         />
-        <div className="w-full mx-auto mt-10 space-y-10">
+        <div className="w-full mx-auto mt-6 sm:mt-10 space-y-6 sm:space-y-10">
           <Card
             children={
               <>
